@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapMog GitHub Developer Hub</title>
+  <meta name="description" content="Official GitHub hub for SnapMog blind snapshot duels, solo camera scoring, leaderboards, and optional Live Duel Beta feedback.">
+  <link rel="canonical" href="https://omoggle-ai.github.io/">
+  <meta property="og:title" content="SnapMog GitHub Developer Hub">
+  <meta property="og:description" content="Official GitHub hub for SnapMog blind snapshot duels, solo camera scoring, leaderboards, and optional Live Duel Beta feedback.">
+  <meta property="og:url" content="https://omoggle-ai.github.io/">
+  <meta property="og:type" content="website">
+  <style>
+    :root { --accent: #db2777; --dark: #1f1020; --ink: #18212f; --muted: #5b6472; --line: #d9dee8; --soft: #f5f7fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: #ffffff; line-height: 1.55; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { background: var(--dark); color: #fff; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .hero { min-height: 82vh; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr); gap: 44px; align-items: center; padding: 52px 0 42px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 28px; color: #e7edf7; font-weight: 700; }
+    .brand img { width: 44px; height: 44px; object-fit: contain; border-radius: 8px; background: #fff; padding: 5px; }
+    h1 { margin: 0 0 18px; font-size: clamp(42px, 6vw, 72px); line-height: 1.02; letter-spacing: 0; }
+    .lead { font-size: 20px; max-width: 720px; color: #d7deea; margin: 0 0 28px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
+    .button { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: 0 18px; border-radius: 6px; font-weight: 700; background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .button:hover { text-decoration: none; filter: brightness(.96); }
+    .ghost { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: 0 18px; border-radius: 6px; font-weight: 700; color: #fff; border: 1px solid rgba(255,255,255,.42); }
+    .ghost:hover { text-decoration: none; background: rgba(255,255,255,.08); }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chips span { border: 1px solid rgba(255,255,255,.25); color: #e7edf7; padding: 6px 10px; border-radius: 999px; font-size: 14px; }
+    .hero-media { display: grid; gap: 12px; }
+    .hero-media img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,.18); box-shadow: 0 20px 60px rgba(0,0,0,.32); background: #fff; }
+    section { padding: 62px 0; }
+    section:nth-child(even) { background: var(--soft); }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
+    h2 { margin: 0; font-size: 30px; letter-spacing: 0; }
+    .section-head p { margin: 0; color: var(--muted); max-width: 560px; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    article { border: 1px solid var(--line); border-radius: 8px; padding: 18px; background: #fff; }
+    article h3 { margin: 0 0 8px; font-size: 17px; }
+    article p { margin: 0; color: var(--muted); }
+    .screens { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; }
+    figure img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; }
+    figcaption { padding: 10px 12px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+    .links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 28px; padding: 0; margin: 0; list-style: none; }
+    .links li { border-bottom: 1px solid var(--line); padding: 11px 0; }
+    .notice { border-left: 4px solid var(--accent); background: #fff; padding: 18px 20px; border-radius: 0 8px 8px 0; color: var(--muted); }
+    footer { padding: 30px 0; color: #667085; border-top: 1px solid var(--line); }
+    @media (max-width: 860px) { .hero { min-height: auto; grid-template-columns: 1fr; padding: 34px 0; } .grid, .screens, .links { grid-template-columns: 1fr; } .section-head { display: block; } h1 { font-size: 42px; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap hero">
+    <div>
+      <div class="brand"><img src="assets/snapmog-logo.png" alt="SnapMog logo"><span>SnapMog on GitHub</span></div>
+      <h1>SnapMog Developer Hub</h1>
+      <p class="lead">SnapMog is a camera duel product with blind snapshot scoring, solo camera feedback, leaderboards, and optional Live Duel Beta flows. This hub keeps public feedback and platform mirrors separate from private production systems.</p>
+      <div class="actions">
+        <a class="button" href="https://snapmog.com">Official website</a>
+        <a class="ghost" href="https://github.com/Omoggle-AI/snapmog">Main GitHub repository</a>
+        <a class="ghost" href="https://snapmog.com/leaderboard">SnapMog leaderboard</a>
+        
+      </div>
+      <div class="chips"><span>Blind Snapshot Duel</span><span>Solo Camera Score</span><span>Leaderboard</span><span>Live Duel Beta</span></div>
+    </div>
+    <div class="hero-media">
+      <img src="assets/screenshots/homepage.png" alt="SnapMog homepage">
+    </div>
+  </div>
+</header>
+<main>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><h2>Camera Duel Boundaries</h2><p>Product-specific entry points for GitHub visitors who want to understand what to report and where to go next.</p></div>
+      <div class="grid"><article><h3>Blind Snapshot Duel</h3><p>Start with one snapshot and score-first matching.</p></article>
+<article><h3>Solo Camera Score</h3><p>Get feedback on framing, lighting, sharpness, and presence.</p></article>
+<article><h3>Leaderboard</h3><p>Review score-first profiles and claimed surfaces.</p></article>
+<article><h3>Live Duel Beta</h3><p>Keep optional live flows behind clear age and safety boundaries.</p></article></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><h2>Product Screens</h2><p>Visual context from the live product so feedback starts from the real user-facing surface.</p></div>
+      <div class="screens"><figure><img src="assets/screenshots/homepage.png" alt="SnapMog homepage" loading="lazy"><figcaption>SnapMog homepage</figcaption></figure>
+<figure><img src="assets/screenshots/leaderboard.png" alt="SnapMog leaderboard" loading="lazy"><figcaption>SnapMog leaderboard</figcaption></figure>
+<figure><img src="assets/screenshots/live-duel.png" alt="SnapMog Live Duel Beta" loading="lazy"><figcaption>SnapMog Live Duel Beta</figcaption></figure></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><h2>Official Repositories And Mirrors</h2><p>GitHub is the canonical public repository. Other platforms are official discovery and feedback mirrors.</p></div>
+      <ul class="links"><li><a href="https://github.com/Omoggle-AI">GitHub organization</a></li>
+<li><a href="https://github.com/Omoggle-AI/snapmog">Canonical public repository</a></li>
+<li><a href="https://gitlab.com/nano-products/snapmog">GitLab mirror</a></li>
+<li><a href="https://codeberg.org/nano-products/snapmog">Codeberg mirror</a></li>
+<li><a href="https://gitee.com/nano-products/snapmog">Gitee mirror</a></li>
+<li><a href="https://gitcode.com/weixin_52314137/snapmog">GitCode mirror</a></li>
+<li><a href="https://git.sr.ht/~chrisv/snapmog">SourceHut mirror</a></li></ul>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><h2>Feedback And Security</h2><p>Use public issues for product feedback that can be discussed openly. Keep private account, billing, uploaded media, logs, and vulnerability details out of public tickets.</p></div>
+      <div class="notice">For private support or security-sensitive reports, contact <a href="mailto:support@snapmog.com">support@snapmog.com</a>. Production source code, provider credentials, billing configuration, and deployment secrets are not published in the public repository.</div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">SnapMog official GitHub developer hub. Website: <a href="https://snapmog.com">snapmog.com</a>.</div></footer>
+</body>
+</html>
